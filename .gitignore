@@ -1,3 +1,4 @@
 /.vagrant/
 /packer_cache/
 /sar_centos-6-7-x64-virtualbox.box
+/vendor/
