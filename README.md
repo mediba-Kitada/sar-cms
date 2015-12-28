@@ -25,7 +25,26 @@ CMS for SAR with Yii2
     $ rbenv exec bundle install --path ./vendor
     ```
 
-#### chef及びopswokrs_cookbooksの導入
+#### chef及びTest Kitchenの導入
+
+- [opsworks_cookbooks](https://github.com/aws/opsworks-cookbooks)を拡張する
+
+    ```bash
+    $ mkdir -p ./opsworks-cookbooks
+    ```
+
+- CMS用cookbookの作成
+
+    ```bash
+    $ cd ./opsworks-cookbooks
+    $ chef generate cookbook cms.sar.mediba.jp
+    ```
+
+- [Test Kitchen](http://kitchen.ci/)の導入
+
+    ```bash
+    $ kitchen init --driver=kitchen-vagrant
+    ```
 
 #### yii2導入
 

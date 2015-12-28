@@ -1,0 +1,7 @@
+name 'cms.sar.mediba.jp'
+maintainer 'The Authors'
+maintainer_email 'dev_sar@mediba.jp'
+license 'all_rights'
+description 'Installs/Configures cms.sar.mediba.jp'
+long_description 'Installs/Configures cms.sar.mediba.jp'
+version '0.1.0'
