@@ -24,17 +24,6 @@
           ]
         }
       }
-    },
-    {
-      "type": "chef-solo",
-      "cookbook_paths": [
-        "chef-repo/site-cookbooks",
-        "chef-repo/cookbooks"
-      ],
-      "environments_path": "chef-repo/environments",
-      "chef_environment": "local",
-      "run_list": [
-      ]
     }
   ],
   "post-processors": [

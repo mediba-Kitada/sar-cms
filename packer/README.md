@@ -34,9 +34,11 @@ Template validated successfully.
 
 ```
 [local]$ cd /path/to/sar-cms
+# AtlasのAPIトークンを環境変数に代入  
+[local]$ export ATLAS_TOKEN="hogefoobar"
 # Packerによるbuild
 ## boxファイルがカレントディレクトリにビルドされる
-[local]$ packer build -only=virtualbox-iso,vagrant packer-template.json
+[local]$ packer build -var "atlas_token=${ATLAS_TOKEN}" -var "version=`date +%Y%m%d%h`" -only=virtualbox-iso,vagrant packer-template.json
 # Vagrantによる仮想環境構築
 [local]$ vagrant box add sar ./sar_centos-6-7-x64-virtualbox.box; vagrant up
 ```
